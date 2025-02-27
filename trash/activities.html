@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>딥인트</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/activities.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        // F12 방지 및 개발자 도구 접근 차단
+        document.addEventListener("keydown", function(e) {
+            if (e.keyCode === 123 || // F12
+                (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl + Shift + I
+                (e.ctrlKey && e.shiftKey && e.keyCode === 67) || // Ctrl + Shift + C
+                (e.ctrlKey && e.keyCode === 85)) { // Ctrl + U
+                e.preventDefault();
+            }
+        });
+    
+        // 우클릭 방지
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    
+    </script>
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <header draggable="false">
+        <img src="assets/images/Nav_bar_logo.png" alt="Club Logo" class="logo-act">
+        <nav-act>
+            <a href="index.html">HOME</a>
+        </nav-act>
+    </header>
+
+    <section id="activities">
+        <div class="absolute">
+            <div class="absolute inset-0 justify-center">
+                <div class="bg-shape1 bg-blue opacity-50 bg-blur"></div>
+                <div class="bg-shape2 bg-green opacity-50 bg-blur"></div>
+                <div class="bg-shape3 bg-purple opacity-50 bg-blur"></div>
+                <div class="bg-shape4 bg-red opacity-50 bg-blur"></div>
+                <div class="bg-shape5 bg-bright opacity-50 bg-blur"></div>
+                <div class="bg-shape6 bg-yellow opacity-50 bg-blur"></div>
+            </div>
+        </div>
+        <h1>Activities</h1>
+        <div class="activities-container">
+            <a href="presentation.html" class="activity-item">
+                <img src="assets/images/act1.jpg" alt="Activity 1">
+                <div class="overlay">학술 발표회</div>
+            </a>
+            <a href="activities.html" class="activity-item">
+                <img src="assets/images/act2.jpg" alt="Activity 2">
+                <div class="overlay">그룹 스터디</div>
+            </a>
+            <a href="activities.html" class="activity-item">
+                <img src="assets/images/act3.jpg" alt="Activity 3">
+                <div class="overlay">AI 프로젝트</div>
+            </a>
+            <a href="activities.html" class="activity-item">
+                <img src="assets/images/act4.jpg" alt="Activity 1">
+                <div class="overlay">동아리 행사</div>
+            </a>
+            <a href="activities.html" class="activity-item">
+                <img src="assets/images/act5.jpg" alt="Activity 2">
+                <div class="overlay">동아리 대회</div>
+            </a>
+            <a href="activities.html" class="activity-item">
+                <img src="assets/images/act6.jpg" alt="Activity 3">
+                <div class="overlay">수상 기록</div>
+            </a>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Deepint. All rights reserved.</p>
+            <p>Ulsan University | Deepint</p>
+            <p>Designed by girukim | Site by girukim</p>
+        </div>
+    </footer>
+
+</body>
+</html>

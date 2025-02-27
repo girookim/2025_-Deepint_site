@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>딥인트</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/presentation.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        // F12 방지 및 개발자 도구 접근 차단
+        document.addEventListener("keydown", function(e) {
+            if (e.keyCode === 123 || // F12
+                (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl + Shift + I
+                (e.ctrlKey && e.shiftKey && e.keyCode === 67) || // Ctrl + Shift + C
+                (e.ctrlKey && e.keyCode === 85)) { // Ctrl + U
+                e.preventDefault();
+            }
+        });
+    
+        // 우클릭 방지
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    
+    </script>
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <header draggable="false">
+        <a href="index.html">
+            <img src="assets/images/Nav_bar_logo.png" alt="Club Logo" class="logo-act">
+        </a>
+        
+    </header>
+
+
+
+    <section id="presentation">
+        <div class="all-content">
+            <div class="title">
+                <a href="index.html">< 학술발표회</a>
+            </div>
+            <div class="pre-selector">
+                <div class="semester-selector">
+                    <span id="semester1" class="active">2024 1학기</span>
+                    <span id="semester2">2024 2학기</span>
+                </div>
+            </div>
+            <div class="pre-content">
+                <div id="semester1-content" class="semester-content active">
+                    <img src="assets/images/pre1.jpg" alt="1학기 이미지" class="pre-img">
+                    <p>"2024년 1학기 딥인트 학술발표회가 진행되었습니다. 이번 발표회에는 스터디 팀 1팀과 프로젝트 팀 3팀이 참여하여, 각 팀의 연구 및 프로젝트 진행 상황을 공유했습니다. 1차 학술발표회에서는 진행상황 공유, 2차 학술발표회에서는 결과발표를 하였습니다."</p>
+                </div>
+                <div id="semester2-content" class="semester-content">
+                    <img src="assets/images/pre2.jpg" alt="2학기 이미지">
+                    <p>"2024년 2학기 학술 발표회를 진행하였습니다. 각 팀에 최종 결과를 발표하였고, 참가자들은 그동안의 연구와 프로젝트 성과를 공유하는 시간을 가졌습니다. 발표 후에는 질의응답 시간을 통해 다양한 의견과 피드백이 오갔습니다. 이번 발표회는 팀 간의 협력과 노력의 결실을 확인할 수 있는 뜻깊은 시간이었으며, 모든 팀원들이 함께 성장한 기회를 마련한 좋은 경험이 되었습니다."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bigp" id="bigp">
+            <h1>참여한 프로젝트</h1>
+            <a href="project.html" class="small-button">프로젝트 자세히 보기</a>
+        </div>
+
+        <div id="semester1-content" class="team semester1-team">
+            <div class="team-content">
+                <img src="assets/images/dc.png" alt="1팀 이미지" class="team-image">
+                <div class="team-details">
+                    <h2>그룹 스터디 1팀: 월드콘브이콘데이콘, 세옥아..너무..세옥</h2>
+                    <h3>2개의 조를 이루어 스터디를 진행</h3>
+                    <p>데이콘 스터디 진행</p>
+                </div>
+            </div>
+        
+        
+            <div class="team-content">
+                <img src="assets/images/nlp.jpg" alt="1팀 이미지" class="team-image">
+                <div class="team-details">
+                    <h2>그룹 스터디 2팀: 자 연어 사조</h2>
+                    <p>자연어 처리 스터디</p>
+                </div>
+            </div>
+        
+            <div class="team-content">
+                <img src="assets/images/dl1.png" alt="1팀 이미지" class="team-image">
+                <div class="team-details">
+                    <h2>그룹 스터디 3팀: 오합지졸</h2>
+                    <p>딥러닝 스터디</p>
+                </div>
+            </div>
+
+            <div class="team-content">
+                <img src="assets/images/pystudy.jpg" alt="1팀 이미지" class="team-image">
+                <div class="team-details">
+                    <h2>그룹 스터디 4팀: 파쇄기, 파킹, 정민동휘의 신명나는 파이썬, 괜찮은거 없으면 이규재로 하겠슴돠</h2>
+                    <h3>4개의 조를 이루어 파이썬 스터디를 진행</h3>
+                    <p>파이썬 스터디</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+        <div id="semester2-content" class="team semester2-team">
+            <div class="team-content">
+                <img src="assets/images/c1.png" alt="1팀 이미지" class="team-image">
+                <div class="team-details">
+                    <h2>그룹 스터디 1팀: C언어를 못해서 C름</h2>
+                    <p>C언어 스터디를 통해 C언어 문법을 마스터하고, 프로그래밍 수업의 중간고사와 기말고사에서 팀원 모두가 A 이상의 성적을 받는 것을 목표로 삼았습니다. 스터디는 동일한 문제를 함께 해결하며, 해결 과정과 결과를 공유하는 방식으로 진행하였습니다.</p>    
+                </div>
+            </div>
+        
+        
+            <div class="team-content">
+                <img src="assets/images/movie1.png" alt="1팀 이미지" class="team-image">
+                <div class="team-details">
+                    <h2>팀 프로젝트 1팀: 오영추</h2>
+                    <p>VAE를 활용한 개인화된 추천 시스템과 상황별 영화 추천 시스템을 구현 및 개발하였습니다.</p>    
+                </div>
+            </div>
+        
+            <div class="team-content">
+                <img src="assets/images/auto1.gif" alt="1팀 이미지" class="team-image">
+                <div class="team-details">
+                    <h2>팀 프로젝트 2팀: 굴러가유</h2>
+                    <p>Python OpenCV 모듈과 Euro Truck Simulator2를 이용해 자율주행 프로젝트를 진행하였습니다.</p>   
+                </div>
+            </div>
+
+            <div class="team-content">
+                <img src="assets/images/lee2.png" alt="1팀 이미지" class="team-image">
+                <div class="team-details">
+                    <h2>팀 프로젝트 3팀: 이규재로 하겠슴돠</h2>
+                    <p>Yolo, Python Opencv를 사용하여 시각장애인 보행 보조 장치를 제작하였습니다.</p>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+
+    
+
+
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Deepint. All rights reserved.</p>
+            <p>Ulsan University | Deepint</p>
+            <p>Designed by girukim | Site by girukim</p>
+        </div>
+    </footer>
+
+    
+    <script src="scripts/presentation.js"></script>
+
+</body>
+</html>

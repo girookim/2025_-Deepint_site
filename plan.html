@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>딥인트</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/plan.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        // F12 방지 및 개발자 도구 접근 차단
+        document.addEventListener("keydown", function(e) {
+            if (e.keyCode === 123 || // F12
+                (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl + Shift + I
+                (e.ctrlKey && e.shiftKey && e.keyCode === 67) || // Ctrl + Shift + C
+                (e.ctrlKey && e.keyCode === 85)) { // Ctrl + U
+                e.preventDefault();
+            }
+        });
+    
+        // 우클릭 방지
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+    
+    </script>
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <header draggable="false">
+        <a href="index.html">
+            <img src="assets/images/Nav_bar_logo.png" alt="Club Logo" class="logo-act">
+        </a>
+    </header>
+
+
+
+    <section id="award">
+        <div class="all-content">
+            <div class="title">
+                <a href="index.html">< 수상기록</a>
+            </div>
+        </div>
+        <div class="award-content">
+            <div class="plan-table" id="2024">
+                <div class="plan-row header">
+                    <div class="large-font">
+                        <span class="big-number">2024</span>
+                    </div>
+                </div>
+                <div class="plan-row">
+                    <div class="gray-text">2024-2학기 IT융합학부 프로그래밍 경진대회</div>
+                    <div class="black-text">1등 1명, 2등 3명, 3등 4명</div>
+                </div>
+                <div class="plan-row">
+                    <div class="gray-text">[제5차] USG AI·데이터 제조혁신 경진대회</div>
+                    <div class="black-text">대상 (경남대학교 총장상)</div>
+                </div>
+                <div class="plan-row">
+                    <div class="gray-text">[5기] LG aimers</div>
+                    <div class="black-text">4위</div>
+                </div>
+                <div class="plan-row">
+                    <div class="gray-text">2024-1학기 IT융합학부 프로그래밍 경진대회</div>
+                    <div class="black-text">1등 2명, 2등 2명, 3명 2등</div>
+                </div>
+                <div class="plan-row_last">
+                    <div class="gray-text">2024 겨울학기 울산대학교 도란도란</div>
+                    <div class="black-text">대상 1팀, 금상 1팀 </div>
+                </div>
+            </div>
+            <div class="plan-table" id="2023">
+                <div class="plan-row header">
+                    <div class="large-font">
+                        <span class="big-number">2023</span>
+                    </div>
+                </div>
+                <div class="plan-row">
+                    <div class="gray-text">2023-2학기 울산대학교 도란도란</div>
+                    <div class="black-text">은상 1팀, 노력상 2팀 </div>
+                </div>
+                <div class="plan-row">
+                    <div class="gray-text">2023-2학기 IT융합학부 프로그래밍 경진대회</div>
+                    <div class="black-text">2등 2명, 3등 2명</div>
+                </div>
+                <div class="plan-row">
+                    <div class="gray-text">2023-2학기 지역 사회문제 해결 해커존 대회</div>
+                    <div class="black-text">최우수상</div>
+                </div>
+                <div class="plan-row">
+                    <div class="gray-text">2023-2학기 대학(원)생 빅데이터 분석 경진대회</div>
+                    <div class="black-text">장려상(한밭대학교 빅데이터 AI센터장상)</div>
+                </div>
+                <div class="plan-row">
+                    <div class="gray-text">2023 여름학기 디자인씽킹 앤 액션</div>
+                    <div class="black-text">최우수상</div>
+                </div>
+                <div class="plan-row">
+                    <div class="gray-text">2023-1학기 울산대학교 도란도란</div>
+                    <div class="black-text">은상 1팀, 노력상 4팀</div>
+                </div>
+                <div class="plan-row_last">
+                    <div class="gray-text">2023-1학기 IT융합학부 프로그래밍 경진대회</div>
+                    <div class="black-text">1등 1명, 2등 1명, 3등 1명</div>
+                </div>
+            </div>
+            <div class="plan-table" id="2022">
+                <div class="plan-row header">
+                    <div class="large-font">
+                        <span class="big-number">2022</span>
+                    </div>
+                </div>
+                <div class="plan-row_last">
+                    <div class="gray-text">2022-2학기 IT융합학부 프로그래밍 경진대회</div>
+                    <div class="black-text">1등 2명, 2등 2명, 3등 2명</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+
+    
+
+
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Deepint. All rights reserved.</p>
+            <p>Ulsan University | Deepint</p>
+            <p>Designed by girukim | Site by girukim</p>
+        </div>
+    </footer>
+
+    
+    <script src="scripts/presentation.js"></script>
+
+</body>
+</html>
